@@ -86,139 +86,346 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   /*****BASE STYLES*****/
+   /* General Styles */
+
+   html {
+    font-size: 16px;
+   }
+
+
+   header,
+   footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   header {
+    background-color: black;
+   }
+
    body {
     font-family: 'Source Sans Pro', sans-serif;
-   color: #3366cc;
+    font-size: 1em;
+    text-align: left;
+    color: #e2e3ed;
    }
-   p, ul li{
-    color: #000033; 
+   
+   ul,
+   ol {
+    list-style-type: none;
    }
-   h2, h4 {
+
+  a {
+    color: #e2e3ed;
+    text-decoration: none;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .content-wrapper {
+    margin: 50px 0;
+  }
+
+  /* Base Styles */
+
+  header,
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  nav ul li a {
+     display: flex;
+     text-transform: capitalize;
+     text-decoration: none;
+     color: #f2f1ef;
+     list-style: none;  
+   }
+
+   h2,
+   h4 {
     font-family: 'Lora', sans-serif;
+    color: lightgoldenrodyellow;
+   }
+   
+   #work li {
+    color: white;
+   }
 
+   #work ul {
+    list-style-type: none;
    }
-   /*****GRID*****/
 
-   .full-width {
-       width: 1200px;
-       margin: 0 auto;
+
+    /********Mobile Styles********/
+
+    /*Header*/
+
+  header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 0;
+  }
+
+  .header-divider {
+    border: 1px solid #242905;
+    width: 100%;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
    }
-   .half-width {
-    width: 600px;
-    float: left;
+
+  header nav ul  {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  header nav ul li {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  nav ul li a {
+     font-size: 1em;  
    }
-   .third-width {
-    width: 400px;
-    float: left;
-   }
-   /*****HEADER*****/
-   header {
-       height: 300px;
-       background-color: #3366cc;
-       background-size: cover;
-       border: 4px solid black;   
-   }
-   header h1 { 
-       font-family: 'Lora', sans-serif;
-       color: white;
-       font-size: 28px;
-     
-   }
-   header img{
-    padding-left: 300px;
-   }  
-   nav {
-       float: right; 
-       padding: 75px 1px;
-   }
-   nav ul li{
-       display: inline-block;
-   }
-   nav ul li a {
-       text-transform: capitalize;
-       text-decoration: none;
-       font-size: 18px;
-       color: white;
-       padding-left: 40px; 
-   }
+   
+
+   /*Hero Area*/
+
+
+  .hero-area {
+    background-image: url(../img/iron.jpg);
+    background-size: cover;
+    background-position: 50%;
+    min-height: 500px;
+    display: flex;
+  }
+
+
+  .hero-area .content-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5em;
+    color: lightgoldenrodyellow;
+    width: 100%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
    /*****ABOUT*****/
 
-   #about .full-width{
-    overflow: auto;
-   }
-   #about h2{
+  .mission {
+    display: flex;
+    background-color: #9ca19a;
+    min-height: 300px;
+    margin: 0; 
+  }
+
+  .mission .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-weight: bold;
-    padding-left: 2px;
-    font-size: 40px;
-   }
-   #about p{
-    padding-left: 105px;
-    text-align: left;
-    font-size: 30px;  
-   }
+    width: 90%;
+    flex-flow: row wrap; 
+  }
+
+  .mission-content h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    font-size: 2em;
+    line-height: 1; 
+    width: 80%;
+  }
+   
+  .mission-content h4 {
+    font-size: 1.8em;
+    width: 100%;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
 
    /*****WORK*****/
 
-   #work .full-width{
-    margin: 0px auto;
-    border-top: 1px solid orange;
-    border-bottom: 1px solid orange;
-    border-image: url("../img/af-sparks.png");
-    overflow: auto; 
-    text-align: center; 
-   }  
-   #work img{
-    margin: 0 auto;
-   }
-   #work .third-width{
-    overflow: auto; 
-    border-bottom: 1px solid orange;
-    border-left: 1px solid orange;
-    line-height: 25px;  
-    margin: 0 auto; 
-    height: 736px;  
-    padding-left: 5px;
-    padding-bottom: 10px;
-    padding-right: 23px;
-   }
-   #work ul li{
-    font-family: 'Source Sans Pro', sans-serif;
-       color: #333366;
-       list-style-position: inside;
-    }
-    #work ul#gear{
-      font-size: 25px;
-    }
-   #work h2, h3{
-    text-align: center;
-   }
-   #work span{
-    font-weight: bolder;
-   }
-   #contact p{
-    padding-left: 228px;
-    font-size: 20px;
-   }
-   #contact img{
-    padding-left: 86px;
-   }
-   #contact img#contact-gear{
-    margin-top: 200px;
-    margin-right: 80px;
-    padding-left: 86px; 
-   }
-   #contact a{
-    text-decoration: none;
-    color: #333366;
-   }
-   #contact h4{
-    padding-top: 89px;
-    padding-left: 89px;
-    color: #333366;
+   #work {
+    background-image: url(../img/gears.jpg);
+    background-size: cover;
+    background-position: 62%;
    }
 
+  #work .work-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  #work .work-content {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  h2.outline {
+    font-size: 2em;
+  }
+  
+  h4.sub {
+    font-size: 1.5em;
+    width: 100%;
+    font-weight: 400;
+    color: lightgoldenrodyellow;
+  }
+
+  #work li {
+    font-size: 1.25em;
+    padding: 20px 0;
+  }
+
+  #work ul {
+    padding: 25px;
+    width: 80%;
+  }
+
+  /* Footer */
+
+
+
+  #contact {
+    background-color: #9ca19a;
+  }
+
+  #contact .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
+
+  #contact h3 {
+    color: black;
+    text-align: center;
+    width: 80%;
+    font-size: 2em;
+
+  }
+  
+  #contact .content-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  #contact h4 {
+    font-size: 1.5em;
+    width: 50%;
+    text-align: center;
+  }
+  .info-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  
+  footer address {
+    color: black;
+    font-weight: 700;
+    font-size: 1.375em;
+    width: 67%;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .copyright p {
+   margin: 20px 0;
+   text-align: center;
+   color: black;
+   font-size: .875em;
+   margin-top: 50px;
+
+ }
+
+  .email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 83%;
+  }
+
+ .email  a {
+  font-size: 1.375em;
+  color: black;
+  font-weight: 400;
+  width: 85%;
+ }
+
+ .email  i {
+  font-size: 1.5em;
+  color: lightgoldenrodyellow;
+ }
+
+ .contact-content i {
+  font-size: 7em;
+  color: black;
+ }
+
+ footer {
+  background-color: #9ca19a;
+ }
+
+/*=========================================================
+                  ABOUT PAGE
+==========================================================*/
+
+/* pending client proposal */
 
 
 
@@ -313,6 +520,76 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+   @media only screen and (min-width: 768px) {
+        
+            /*Tablet - general styles */
+
+     .content-wrapper {
+        max-width: 640px;
+        margin: 100px 0;
+     }
+
+     img {
+      max-width: 100%;
+    }
+
+    .header-divider {
+        display: none;
+    }
+
+
+     header .content-wrapper {
+        width: 100%;
+        flex-flow: row;
+        justify-content: space-between;
+        margin: 50px;
+     }                                              
+
+     header img {
+        width: 100%;
+      }
+
+     header nav {                                            
+        width: 27%;
+     }
+
+     header nav ul {
+       font-size: 1.250em;
+     }
+    
+    /* Hero Area */
+
+    .hero-area {
+      min-height: 600px;
+      justify-content: center;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5em;
+      width: 96%;
+    }
+
+    .mission-content h4 {
+      font-size: 2.5em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
