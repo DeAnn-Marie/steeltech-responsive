@@ -150,10 +150,14 @@ textarea {
      list-style: none;  
    }
 
-   h2,
+   h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+   }
+
+   h3,
    h4 {
     font-family: 'Lora', sans-serif;
-    color: lightgoldenrodyellow;
+    color: #fafad2;
    }
    
    #work li {
@@ -216,7 +220,7 @@ textarea {
     background-image: url(../img/iron.jpg);
     background-size: cover;
     background-position: 50%;
-    min-height: 500px;
+    min-height: 600px;
     display: flex;
   }
 
@@ -236,13 +240,13 @@ textarea {
   }
 
   .hero-content h1 {
-    font-size: 1.5em;
+    font-size: 2.2em;
     color: lightgoldenrodyellow;
     width: 100%;
     font-weight: 700;
     line-height: 1;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 60px 0 50px  0;
   }
 
    /*****ABOUT*****/
@@ -269,7 +273,7 @@ textarea {
     flex-flow: row wrap; 
   }
 
-  .mission-content h2 {
+  .mission-content p {
     font-family: 'Source Sans Pro', sans-serif;
     color: black;
     font-size: 2em;
@@ -277,11 +281,13 @@ textarea {
     width: 80%;
   }
    
-  .mission-content h4 {
+  .mission-content h2 {
     font-size: 1.8em;
     width: 100%;
     font-weight: 400;
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+
   }
 
    /*****WORK*****/
@@ -310,11 +316,26 @@ textarea {
     margin: 50px 0;
   }
 
-  h2.outline {
+  #work h2 {
+    font-weight: 300;
+    margin: 0;
+    width: 100%;
+  }
+
+  #work h2.sub {
+    font-weight: 400;
+    width: 75%;
+    font-size: 1.8em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    margin-top: 50px;
+  }
+
+  article h3 {
     font-size: 2em;
   }
   
-  h4.sub {
+  article h4 {
     font-size: 1.5em;
     width: 100%;
     font-weight: 400;
@@ -353,7 +374,6 @@ textarea {
     text-align: center;
     width: 80%;
     font-size: 2em;
-
   }
   
   #contact .content-info {
@@ -367,6 +387,7 @@ textarea {
     font-size: 1.5em;
     width: 50%;
     text-align: center;
+    color: white;
   }
   .info-content {
     display: flex;
@@ -407,9 +428,9 @@ textarea {
   width: 85%;
  }
 
- .email  i {
+ .email i {
   font-size: 1.5em;
-  color: lightgoldenrodyellow;
+  color: white;
  }
 
  .contact-content i {
@@ -561,7 +582,7 @@ textarea {
     /* Hero Area */
 
     .hero-area {
-      min-height: 600px;
+      min-height: 700px;
       justify-content: center;
     }
 
@@ -570,24 +591,78 @@ textarea {
       width: 96%;
     }
 
+    /* Mission */
+
+    .mission {
+      justify-content: center;
+    }
+
+    .mission-content h2 {
+      font-size: 2.875em;
+    }
+
     .mission-content h4 {
       font-size: 2.5em;
     }
 
+    /* Work */
 
+    .work {
+      display: flex;
+      justify-content: center;
+    }
 
+    h2.outline {
+      font-size: 2.5em;
+    }
 
+    h2.sub {
+      font-size: 3em;
+    }
 
+    article .outline {
+      border: 1px solid red;
+      box-sizing: border-box;
+      display: flex;
+      
+    }
+      
 
+    .casting,
+    .clean,
+    .identify,
+    .gear,
+    .oil,
+    .complex,
+    .gas,
+    .bend,
+    .wear,
+    .aero {
+      border: 1px solid orange;
+      box-sizing: border-box;
+    }
 
+    .casting,
+    .clean,
+    .identify {
+      width: 33.3%;
+    }
 
+    .gear,
+    .oil,
+    .complex,
+    .gas {
+      width: 25%;
+    }
 
+    .bend,
+    .wear {
+      width: 50%;
+    }
 
-
-
-
-
-
+    .aero {
+      width: 100%;
+    }
 
 
 
