@@ -36,9 +36,10 @@
   
   <header>
     <div class="content-wrapper">
+      <div class="header-content">
       <figure>
         <a href="index.html">
-         <img src="img/invertlogo.jpg" alt="steeltech logo">
+         <img src="img/invertlogo.jpg" alt="steeltech logo"/>
         </a>
       </figure>
       <div class="header-divider"></div>
@@ -49,6 +50,8 @@
           </ul>
         </nav>
       </div>
+      </div>
+    
 
   </header>
 
@@ -76,9 +79,10 @@
       <div class="work-content-wrapper">  <!--wrapper for all processes -->
       <h2 class="sub">Established Successes</h2>
         <div class="work-content"> 
-          <article class="outline"> <!-- Parent 1 -->
-            <h3>Steelmaking and Casting Quality Successes</h3> 
-              <div class="casting"> <!-- start child 1 of 3-->
+          <div class="outline"> <!-- Parent 1 -->
+            <h3 id="one">Steelmaking and Casting Quality Successes</h3> 
+              <article class="first">
+                <div class="casting"> <!-- start child 1 of 3-->
                 <div class="casting-content-wrapper">
                 <div class="casting-content">
                 <h4>
@@ -114,10 +118,12 @@
                   </ul>
    ◊              </div>
                 </div>
-              </div> 
-            </article> <!-- Parent 1 ends -->  
-            <article class="outline"> <!--parent 2  starts-->
-              <h3>Steel Processing Successes</h3> 
+                </div>
+              </article>
+              </div> <!-- Parent 1 ends -->  
+            <div class="outline"> <!--parent 2  starts-->
+              <h3 id="two">Steel Processing Successes</h3> 
+              <article class="second">
                 <div class="gear"> <!-- start child 1 of 4 -->
                  <div class="content-wrapper">
                   <div class="gear-content">
@@ -164,9 +170,11 @@
                       </div>
                     </div>
                   </div>
-                </article> <!-- end Parent 2 -->
-                <article class="outline"> <!-- Parent 3 starts-->
-                  <h2>Steel Part Performance Improvement</h2>
+                </article> 
+              </div> <!-- end Parent 2 -->
+                <div class="outline"> <!-- Parent 3 starts-->
+                  <h3 id="three">Steel Part Performance Improvement</h3>
+                  <article class="third">
                     <div class="bend"> <!-- start child 1 of 2 -->
                       <div class="content-wrapper">
                         <div class="bend-content">
@@ -192,11 +200,13 @@
                           </div>
                         </div>
                       </div>
-                    </article> <!-- end Parent 3 -->
+                    </article>
+                  </div> <!-- end Parent 3 -->
+                  <article class="fourth">
                     <div class="aero"> <!-- Parent 4 starts full width -->
                       <div class="content-wrapper">
                         <div class="aero-content">
-                        <h4>
+                        <h4 id="space">
                           Established Success and Experience in Aerospace Steel Processing and Evaluation</h4>
                           <ul>
                             <li>Physical Metallurgy of Pyrowear 53 and Ferrium C64 Steel</li>
@@ -207,7 +217,7 @@
                         </div>
                       </div>
                     </div>
-                  </div> <!-- Parent 4 ends -->
+                  </article><!-- Parent 4 ends -->
                 </div> <!-- Work content ends -->
           </section>
   </main>

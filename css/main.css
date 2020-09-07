@@ -116,6 +116,9 @@ textarea {
     list-style-type: none;
    }
 
+  #work li {
+    color: white;
+   }
   a {
     color: #e2e3ed;
     text-decoration: none;
@@ -130,6 +133,7 @@ textarea {
   }
 
   .content-wrapper {
+    width: 90%;
     margin: 50px 0;
   }
 
@@ -139,6 +143,7 @@ textarea {
   footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
   }
 
@@ -160,15 +165,6 @@ textarea {
     color: #fafad2;
    }
    
-   #work li {
-    color: white;
-   }
-
-   #work ul {
-    list-style-type: none;
-   }
-
-
     /********Mobile Styles********/
 
     /*Header*/
@@ -179,8 +175,18 @@ textarea {
     align-items: center;
     flex-flow: column;
     margin: 0;
+    width: 100%;
   }
 
+  .header-content {
+    width: 90%;
+    justify-content: center;
+    ;
+  }
+
+   img {
+    width: 100%;
+  }
   .header-divider {
     border: 1px solid #242905;
     width: 100%;
@@ -195,9 +201,9 @@ textarea {
 
   header nav ul  {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-    width: 100%;
+    width: 60%;
     padding: 0;
     margin: 0;
   }
@@ -222,37 +228,40 @@ textarea {
     background-position: 50%;
     min-height: 600px;
     display: flex;
+    justify-content: center;
   }
 
 
   .hero-area .content-wrapper {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     margin: 0;
-    width: 100%;
   }
 
   .hero-content {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 90%;
+    width: 100%;
   }
 
   .hero-content h1 {
     font-size: 2.2em;
     color: lightgoldenrodyellow;
-    width: 100%;
+    width: 76%;
     font-weight: 700;
     line-height: 1;
     text-align: center;
-    margin: 60px 0 50px  0;
+    margin: 10px 0 10px  0;
+    padding-top: 50px;
   }
 
    /*****ABOUT*****/
 
   .mission {
     display: flex;
+    justify-content: center;
     background-color: #9ca19a;
     min-height: 300px;
     margin: 0; 
@@ -262,14 +271,14 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
 
   .mission-content {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 90%;
+    width: 100%;
     flex-flow: row wrap; 
   }
 
@@ -279,6 +288,7 @@ textarea {
     font-size: 2em;
     line-height: 1; 
     width: 80%;
+    font-weight: 400;
   }
    
   .mission-content h2 {
@@ -296,9 +306,11 @@ textarea {
     background-image: url(../img/gears.jpg);
     background-size: cover;
     background-position: 62%;
+    display: flex;
+    justify-content: center;
    }
 
-  #work .work-content-wrapper {
+  #work .work-content-wrapper { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,7 +320,7 @@ textarea {
 
   #work .work-content {
     display: flex;
-    width: 90%;
+    width: 85%;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
@@ -320,36 +332,69 @@ textarea {
     font-weight: 300;
     margin: 0;
     width: 100%;
+    border-bottom: 1px solid grey;
+  }
+
+  h3#one, h3#two, h3#three {
+    margin-bottom: 50px;
+    font-size: 2.375em;
+    width: 97%;
   }
 
   #work h2.sub {
     font-weight: 400;
-    width: 75%;
+    width: 76%;
     font-size: 1.8em;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     margin-top: 50px;
   }
 
-  article h3 {
-    font-size: 2em;
-  }
-  
-  article h4 {
+  #work h4 {
     font-size: 1.5em;
-    width: 100%;
     font-weight: 400;
-    color: lightgoldenrodyellow;
+    color: #fafad2;
+    margin: 20px 0 10px 0;
+    padding-top: 50px;
   }
 
   #work li {
-    font-size: 1.25em;
+    font-size: 1.5em;
     padding: 20px 0;
   }
 
   #work ul {
-    padding: 25px;
-    width: 80%;
+    padding-left: 0;
+  }
+  #work ul li{
+    justify-content: center;
+    align-items: center;
+  }
+
+  article.first .content-wrapper {
+    margin: 0%;
+    width: 100%;
+  }
+
+  article.second .content-wrapper {
+    margin: 0%;
+    width: 100%;
+  }
+
+  article.third .content-wrapper {
+    margin: 0%;
+    width: 100%;
+  }
+  
+  article.fourth .content-wrapper {
+    margin: 0%;
+    width: 100%;
+  }
+
+  h4#space {
+    font-size: 1.750em;
+    font-weight: 700;
+    width: 100%;
   }
 
   /* Footer */
@@ -587,7 +632,7 @@ textarea {
     }
 
     .hero-content h1 {
-      font-size: 2.5em;
+      font-size: 2.75em;
       width: 96%;
     }
 
@@ -601,32 +646,51 @@ textarea {
       font-size: 2.875em;
     }
 
-    .mission-content h4 {
-      font-size: 2.5em;
+    .mission-content p {
+      font-size: 2.75em;
+      width: 100%;
     }
 
     /* Work */
 
-    .work {
+    #work {
       display: flex;
       justify-content: center;
     }
 
-    h2.outline {
+    .outline h2 {
       font-size: 2.5em;
+
+    
     }
 
-    h2.sub {
+    .outline h4 {
       font-size: 3em;
+      width: 58%;
     }
 
-    article .outline {
+    .outline h3 {
+      font-size: 2em;
+    }
+    .outline {
       border: 1px solid red;
       box-sizing: border-box;
       display: flex;
+      flex-basis: 90%;
+      flex-direction: row wrap;
+      width: 100%;
       
     }
       
+    .outline.casting,
+    .clean,
+    .identify {
+      border: 1px solid blue;
+    }
+
+
+
+
 
     .casting,
     .clean,
